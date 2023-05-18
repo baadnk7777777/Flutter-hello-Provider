@@ -47,6 +47,12 @@ class CounterGetX extends StatelessWidget {
             ),
             const Text("From Obs"),
             Obx(() => Text("${counterController.counterObs}")),
+            TextButton(
+                onPressed: () {
+                  Get.back();
+                  Get.delete<CounterController>();
+                },
+                child: const Text("Back"))
           ],
         ),
       ),

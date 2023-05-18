@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:helloprovider/controllers/cart-controller.dart';
 import 'package:helloprovider/models/product.dart';
+import 'package:helloprovider/views/couter_page.dart';
 
 import '../controllers/shopping-controller.dart';
 
@@ -71,9 +72,15 @@ class ShoppingPage extends StatelessWidget {
                 return Text('Total amount: ${controller.totalPrice}');
               },
             ),
-            SizedBox(
+            const SizedBox(
               height: 100,
-            )
+            ),
+            TextButton(
+              onPressed: () {
+                Get.to(() => CounterGetX());
+              },
+              child: const Text("Counter Page"),
+            ),
           ],
         ),
       ),
