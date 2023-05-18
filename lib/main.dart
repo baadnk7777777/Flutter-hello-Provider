@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:helloprovider/views/couter_page.dart';
 import 'package:helloprovider/views/shoppingPage.dart';
 
 void main() {
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: ShoppingPage(),
+      home: CounterGetX(),
     );
   }
 }
